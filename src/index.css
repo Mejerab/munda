@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.black {
+    color: #11121C;
+}
+
+.tran {
+    transition: all .9s ease-in-out;
+    transition-duration: 9s;
+}
+
+.tran:hover {
+    background: #fff;
+}
+
+.no-black {
+    color: #383838;
+}
+.parent:hover .child {
+    background: linear-gradient(to right, #FF624966, #6C5AFF66);
+}
+.test>div>div{
+    transition: all .4s ease-in-out ;
+}
+.test:hover div div{
+    background-color: #FF6249;
+}
+.butt{
+    transition: all .5s ease-out;
+}
+.butt:hover{
+    background: #fff;
+    color: #383838;
+    border: 1px solid #D3D3D3;
+}
+.ico{
+    transition: all .5s ease-out;
+}
+.butt:hover .ico{
+    background: linear-gradient(to right, #FF6249, #6C5AFF);
+    color: #fff;
+}
