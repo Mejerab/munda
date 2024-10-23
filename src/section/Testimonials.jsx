@@ -1,8 +1,16 @@
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import AOS from 'aos';
+import { useEffect } from 'react';
 import { IoArrowDown } from 'react-icons/io5';
 const Testimonials = () => {
+    useEffect(()=>{
+        AOS.init({
+            easing: 'ease-in-cubic',
+            once: true
+        })
+    }, [])
     const handleClick = (id) => {
         const div1 = document.getElementById('div1');
         const div2 = document.getElementById('div2');
@@ -205,10 +213,10 @@ const Testimonials = () => {
 
     }
     return (
-        <div className="max-w-[1280px] mx-auto my-32">
+        <div className="max-w-[1280px] mx-auto my-32 px-3">
             <h2 className="text-5xl black uppercase leading-[1.2] mx-auto text-center font-medium lg:w-2/3">We have earned over <span className="text-[#6C5AFF]">6,000</span> reviews on <span className="text-[#FF6249]">Google</span> from our customers!</h2>
             <div className='grid grod-cols-1 lg:grid-cols-3 gap-9 mt-24 mb-16'>
-                <div className='bg-[#FAF4F8] rounded-xl  flex justify-center flex-col items-center'>
+                <div data-aos='fade-left' className='bg-[#FAF4F8] rounded-xl flex justify-center flex-col items-center'>
                     <div className='flex items-center gap-x-5 justify-start w-full pl-12 pt-8 '>
                         <img src="https://i.ibb.co.com/cT4Zppx/Image-11.png" alt="" />
                         <div>
@@ -216,9 +224,9 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I recently had the pleasure of working with Nova Luna to revamp my website, and I couldn’t be more impressed with the results. From start to finish, their team demonstrated professionalism, creativity, and genuine commitment to bringing my vision to life. What truly sets... <span className='text-[#6C5AFF]'>Read More</span></p>
+                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I recently had the pleasure of working with Nova Luna to revamp my website, and I couldn’t be more impressed with the results. From start to finish, their team demonstrated professionalism, creativity, and genuine commitment to bringing my vision to life. What truly sets... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
                 </div>
-                <div className='bg-[#FAF4F8] rounded-xl flex justify-center flex-col items-center'>
+                <div data-aos='fade-up' className='bg-[#FAF4F8] rounded-xl flex justify-center flex-col items-center'>
                     <div className='flex items-center gap-x-5 justify-start w-full pl-12 pt-8'>
                         <img src="https://i.ibb.co.com/Mp5v7cj/Image-12.png" alt="" />
                         <div>
@@ -226,9 +234,9 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>Since the first phone call, I had the most assurance and confidence to move forward with my business. Nova Luna helped me shape my ideas by their organization and approach to creating my website. They were very focused on listing to my vision and guided it with technological... <span className='text-[#6C5AFF]'>Read More</span></p>
+                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>Since the first phone call, I had the most assurance and confidence to move forward with my business. Nova Luna helped me shape my ideas by their organization and approach to creating my website. They were very focused on listing to my vision and guided it with technological... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
                 </div>
-                <div className='bg-[#FAF4F8] rounded-xl  flex justify-center flex-col items-center'>
+                <div data-aos='fade-right' className='bg-[#FAF4F8] rounded-xl  flex justify-center flex-col items-center'>
                     <div className='flex items-center gap-x-5 justify-start w-full pl-12 pt-8'>
                         <img src="https://i.ibb.co.com/SnTrS1B/Image-13.png" alt="" />
                         <div>
@@ -236,11 +244,11 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I can’t say enough great things about my experience with Jarred, Maitreya, and the entire Lunar Nova staff. At first I tried to do it on my own but I shortly realized I needed a pro. Right from our initial phone call I realized Jared was the best choice fro my <br /> projects... <span className='text-[#6C5AFF]'>Read More</span></p>
+                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I can’t say enough great things about my experience with Jarred, Maitreya, and the entire Lunar Nova staff. At first I tried to do it on my own but I shortly realized I needed a pro. Right from our initial phone call I realized Jared was the best choice fro my <br /> projects... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
                 </div>
             </div>
             <div className='flex lg:flex-row flex-col-reverse gap-y-3 justify-between'>
-                <button className="uppercase w-fit butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-xs"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all reviews</button>
+                <button className="uppercase w-fit butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-sm"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all reviews</button>
                 <div className='bg-[#FAF4F8] rounded-full flex gap-x-1 px-5 py-3 items-center w-fit'>
                     <button onClick={() => handleClick('btn1')} className='test'>
                         <div id='div1' className='bg-[#FAF4F8] p-2 rounded-full border border-[#FF6249]'>

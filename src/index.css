@@ -48,3 +48,25 @@
     background: linear-gradient(to right, #FF6249, #6C5AFF);
     color: #fff;
 }
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.spin{
+    animation: spin 5s infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-70%);
+    }
+}
+.move-animation{
+    animation: move 4s infinite;
+}

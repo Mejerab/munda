@@ -1,14 +1,22 @@
 import { IoArrowDown } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Services = () => {
+    useEffect(()=>{
+        AOS.init({
+            once: true
+        })
+    }, [])
     return (
-        <div className=" max-w-[1280px] mx-auto">
-            <div className="flex lg:flex-row flex-col justify-between mt-28">
-                <h2 className="text-5xl black uppercase font-medium">our <br />
+        <div className="max-w-[1280px] mx-auto  px-3 min-h-screen flex flex-col justify-evenly">
+            <div className="flex lg:flex-row flex-col justify-between">
+                <h2 data-aos='fade-left' className="text-5xl black uppercase font-medium">our <br />
                     services</h2>
-                <p className="text-[#383838] font-medium text-xs w-2/3 mt-3 lg:mt-0 lg:w-1/4 leading-relaxed">We work closely with our clients to understand their objectives, target audience, and unique needs. We use our creative skills to translate these requirements and practical design solutions.</p>
+                <p data-aos='fade-right' className="text-[#383838] font-medium text-sm w-2/3 mt-3 lg:mt-0 lg:w-1/4 leading-relaxed">We work closely with our clients to understand their objectives, target audience, and unique needs. We use our creative skills to translate these requirements and practical design solutions.</p>
             </div>
-            <div className="grid grid-cols-3 gap-y-4 lg:grid-cols-6 my-12">
+            <div data-aos='fade-up' className="grid grid-cols-2 gap-y-4 lg:grid-cols-6 my-12">
                 <div className="rounded-lg shadow-xl p-[0.06rem] bg-none hover:bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] hover:-translate-y-1 delay-150 duration-300 transition">
                     <div className="h-full grid gap-y-7 items-center justify-center bg-white text-center rounded-lg">
                         <div className="bg-[#FAF4F8] mt-7 w-fit rounded-full p-5 mx-auto">
