@@ -51,16 +51,16 @@ const Header = () => {
                             <a className="btn btn-ghost text-xl"><img className="w-32" src="https://i.ibb.co.com/tJ1ntpZ/Logo.png" alt="" /></a>
                         </div>
                         <div className="navbar-center hidden lg:flex">
-                            <ul className="menu transition-colors menu-horizontal rounded-full uppercase text-sm px-1">
+                            <ul className="menu transition-colors menu-horizontal rounded-full uppercase text-[17px] px-1">
                                 {lists}
                             </ul>
                         </div>
                         <div className="navbar-end">
-                            <button className="uppercase border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-sm duration-500 butt hover:bg-white"><FiPhoneCall className="px-1 ico text-xl rounded-full bg-white text-black" /> book a call</button>
+                            <button className="uppercase border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-[17px] duration-500 butt hover:bg-white"><FiPhoneCall className="px-1 ico text-xl rounded-full bg-white text-black" /> book a call</button>
                         </div>
                     </div>
                     <h2 data-aos='fade-down' className="xl:w-3/5 xl:mt-0 mt-24 lg:mt-36 w-full mx-auto text-center text-7xl leading-none py-20 text-[#11121C] font-medium uppercase">We build Brands, website, & Digital <span className="inline-block lg:hidden">Systems</span><span className="hidden lg:inline-block">Experiences</span></h2>
-                    <div data-aos='fade-up' className="flex justify-center mt-24 xl:mt-0 lg:mt-36 relative bottom-7 h-fit">
+                    <div data-aos='fade-up' className="flex justify-center mb-96 xl:mt-0 lg:mt-36 relative bottom-7 h-fit">
                         <div className="bg-[#ffffff80] rounded-full spin">
                             <img className="w-32" src="https://i.ibb.co.com/CQzYzkC/Text.png" alt="" />
                         </div>
@@ -81,10 +81,10 @@ const Header = () => {
                 </div>
                 <div className="flex justify-between mt-6 lg:flex-row flex-col gap-y-2 lg:gap-y-0">
                     <Marquee direction="right" behavior="scroll" scrollAmount="5">
-                        <button className="mx-2"><img className="h-64" src="https://i.ibb.co.com/ZYbDLF7/Image-3.png" alt="" /></button>
+                        <button className="mx-2"><img className="h-64" src="https://i.ibb.co.com/3C62fjt/Image.png" alt="" /></button>
                         <button className="mx-2"><img className="h-64" src="https://i.ibb.co.com/SdSMYdc/Image-4.png" alt="" /></button>
                         <button className="mx-2"><img className="h-64" src="https://i.ibb.co.com/wSzr0Gc/Image-5.png" alt="" /></button>
-                        <button className="mx-2"><img className="h-64 lg:ml-0 ml-auto" src="https://i.ibb.co.com/FKL2z09/Image-6.png" alt="" /></button>
+                        <button className="mx-2"><img className="h-64 lg:ml-0 ml-auto" src="https://i.ibb.co.com/z75sgHq/image-1.png" alt="" /></button>
                     </Marquee>
                 </div>
             </div>

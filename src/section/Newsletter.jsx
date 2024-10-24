@@ -16,7 +16,7 @@ const Newsletter = () => {
                     <p data-aos='fade-right' className="text-white font-bold uppercase text-center">Have any project in your mind?</p>
                     <h2 data-aos='fade-left' className="text-5xl text-white uppercase font-medium py-6 text-center">let’s work together!</h2>
                     <div data-aos='fade-right' className="text-center mt-8">
-                        <button className="uppercase butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-sm"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />schedule a call</button>
+                        <button className="uppercase butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-[17px]"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />schedule a call</button>
                     </div>
                 </div>
             </div>

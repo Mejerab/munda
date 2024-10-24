@@ -119,7 +119,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="flex font-medium justify-between py-3 border-t-2 text-sm lg:flex-row flex-col gap-y-4">
+                    <div className="flex font-medium justify-between py-3 border-t-2 text-[17px] lg:flex-row flex-col gap-y-4">
                         <p className="pl-1"> Monda © 2024 / All Right Reserved</p>
                         <ul className="text-[#11121C] pl-0">
                             <li className="hover:underline inline-block px-2"><a href="#">Privacy</a></li>

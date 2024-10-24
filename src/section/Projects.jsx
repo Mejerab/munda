@@ -18,38 +18,38 @@ const Projects = () => {
                     <div data-aos="fade-left">
                         <img src="https://i.ibb.co.com/PrCjRKy/Image-7.png" alt="" />
                         <div className="my-6">
-                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-sm text-[#FFFFFF26] py-1 px-3">Finance</span>
-                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-sm font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
+                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] text-[#FFFFFF26] py-1 px-3">Finance</span>
+                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
                             <h5 className="text-white font-medium my-6 text-lg">Payoobel - Financial Services website</h5>
                         </div>
                     </div>
                     <div data-aos="fade-right" className="ml-auto">
                         <img src="https://i.ibb.co.com/tqqFhMJ/Image-8.png" alt="" />
                         <div className="my-6">
-                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-sm text-[#FFFFFF26] py-1 px-3">Finance</span>
-                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-sm font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
+                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] text-[#FFFFFF26] py-1 px-3">Finance</span>
+                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
                             <h5 className="text-white font-medium my-6 text-lg">Modish - Renewable Energy Website</h5>
                         </div>
                     </div>
                     <div data-aos="fade-left">
                         <img src="https://i.ibb.co.com/WDjXKcp/Image-9.png" alt="" />
                         <div className="my-6">
-                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-sm text-[#FFFFFF26] py-1 px-3">Finance</span>
-                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-sm font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
+                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] text-[#FFFFFF26] py-1 px-3">Finance</span>
+                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
                             <h5 className="text-white font-medium my-6 text-lg">Krete - Webstore design [UX/UI]</h5>
                         </div>
                     </div>
                     <div data-aos="fade-right" className="ml-auto">
                         <img src="https://i.ibb.co.com/zHdQKfT/Image-10.png" alt="" />
                         <div className="my-6">
-                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-sm text-[#FFFFFF26] py-1 px-3">Finance</span>
-                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-sm font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
+                            <span className="mr-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] text-[#FFFFFF26] py-1 px-3">Finance</span>
+                            <span className="ml-2 border-[#FFFFFF26] border rounded-full w-fit text-[17px] font-semibold text-[#FFFFFF26] py-1 px-3">UI/UX</span>
                             <h5 className="text-white font-medium my-6 text-lg">Solara - Solar Panel Landing Page</h5>
                         </div>
                     </div>
                 </div>
                 <div className="text-center mt-8">
-                    <button className="uppercase butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-sm"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all projects</button>
+                    <button className="uppercase butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-[17px]"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all projects</button>
                 </div>
             </div>
         </div>

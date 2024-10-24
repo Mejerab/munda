@@ -1,10 +1,32 @@
+import { useSpring, animated } from '@react-spring/web';
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { IoArrowDown } from 'react-icons/io5';
 const Testimonials = () => {
+    const [expandOne, setExpandOne] = useState(false);
+    const [expandTwo, setExpandTwo] = useState(false);
+    const [expandThree, setExpandThree] = useState(false);
+    const animate = useSpring({
+        opacity: expandOne ? 1 : 0,
+        maxHeight: expandOne ? 200 : 0,
+        overflow: 'hidden',
+        config: {duration: 300},
+    })
+    const animate2 = useSpring({
+        opacity: expandTwo ? 1 : 0,
+        maxHeight: expandTwo ? 200 : 0,
+        overflow: 'hidden',
+        config: {duration: 300},
+    })
+    const animate3 = useSpring({
+        opacity: expandThree ? 1 : 0,
+        maxHeight: expandThree ? 200 : 0,
+        overflow: 'hidden',
+        config: {duration: 300},
+    })
     useEffect(()=>{
         AOS.init({
             easing: 'ease-in-cubic',
@@ -224,7 +246,7 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I recently had the pleasure of working with Nova Luna to revamp my website, and I couldn’t be more impressed with the results. From start to finish, their team demonstrated professionalism, creativity, and genuine commitment to bringing my vision to life. What truly sets... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
+                    <p className='text-[17px] font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I recently had the pleasure of working with Nova Luna to revamp my website, and I couldn’t be more impressed with the results. From start to finish, their team demonstrated professionalism, creativity, and genuine commitment to bringing my vision to life. What truly sets... <animated.div style={animate}>Success is not just about reaching the destination, but about learning from every challenge along the way. In moments of doubt, remember that perseverance turns obstacles into opportunities.</animated.div> <button onClick={()=>setExpandOne(!expandOne)} className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read {expandOne ? 'Less' : 'More'}</button></p>
                 </div>
                 <div data-aos='fade-up' className='bg-[#FAF4F8] rounded-xl flex justify-center flex-col items-center'>
                     <div className='flex items-center gap-x-5 justify-start w-full pl-12 pt-8'>
@@ -234,7 +256,7 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>Since the first phone call, I had the most assurance and confidence to move forward with my business. Nova Luna helped me shape my ideas by their organization and approach to creating my website. They were very focused on listing to my vision and guided it with technological... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
+                    <p className='text-[17px] font-medium w-[90%] p-8 pb-12 leading-[1.9]'>Since the first phone call, I had the most assurance and confidence to move forward with my business. Nova Luna helped me shape my ideas by their organization and approach to creating my website. They were very focused on listing to my vision and guided it with... <animated.div style={animate2}>Success is not just about reaching the destination, but about learning from every challenge along the way. In moments of doubt, remember that perseverance turns obstacles into opportunities.</animated.div> <button onClick={()=>setExpandTwo(!expandTwo)} className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
                 </div>
                 <div data-aos='fade-right' className='bg-[#FAF4F8] rounded-xl  flex justify-center flex-col items-center'>
                     <div className='flex items-center gap-x-5 justify-start w-full pl-12 pt-8'>
@@ -244,11 +266,11 @@ const Testimonials = () => {
                             <Rating style={{ maxWidth: 80 }} value={5} readOnly />
                         </div>
                     </div>
-                    <p className='text-sm font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I can’t say enough great things about my experience with Jarred, Maitreya, and the entire Lunar Nova staff. At first I tried to do it on my own but I shortly realized I needed a pro. Right from our initial phone call I realized Jared was the best choice fro my <br /> projects... <button className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
+                    <p className='text-[17px] font-medium w-[90%] p-8 pb-12 leading-[1.9]'>I can’t say enough great things about my experience with Jarred, Maitreya, and the entire Lunar Nova staff. At first I tried to do it on my own but I shortly realized I needed a pro. Right from our initial phone call I realized Jared was the best choice from my projects and sometimes... <animated.div style={animate3}>Success is not just about reaching the destination, but about learning from every challenge along the way. In moments of doubt, remember that perseverance turns obstacles into opportunities.</animated.div> <button onClick={()=>setExpandThree(!expandThree)} className='text-[#6C5AFF] hover:text-[#6C5AFF99] duration-100 transition'>Read More</button></p>
                 </div>
             </div>
             <div className='flex lg:flex-row flex-col-reverse gap-y-3 justify-between'>
-                <button className="uppercase w-fit butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-sm"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all reviews</button>
+                <button className="uppercase w-fit butt border-none rounded-full text-white btn bg-gradient-to-r from-[#FF6249] to-[#6C5AFF] !text-[17px]"><IoArrowDown className="px-1 ico -rotate-90 text-xl rounded-full bg-white text-black" />view all reviews</button>
                 <div className='bg-[#FAF4F8] rounded-full flex gap-x-1 px-5 py-3 items-center w-fit'>
                     <button onClick={() => handleClick('btn1')} className='test'>
                         <div id='div1' className='bg-[#FAF4F8] p-2 rounded-full border border-[#FF6249]'>
